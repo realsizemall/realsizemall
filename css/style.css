@@ -1,0 +1,221 @@
+/* CSS Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+body {
+    font-family: 'Nanum Myeongjo', '나눔명조', serif;
+    background-color: #faf2e7;
+    color: #3b3c3c;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.header-logo {
+    margin: 0 auto 2rem;
+    width: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b3c3c;
+}
+.header-logo h1 {
+    display: none;
+}
+.header-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-section {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0 auto 2rem;
+    width: 500px;
+    max-width: 500px;
+}
+.brand-name {
+    color: #e87868;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #3b3c3c;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    color: #3b3c3c;
+}
+.brand-signature {
+    font-size: 0.8rem;
+    font-style:italic;
+    color: #3b3c3c;
+    opacity: 0.6;
+}
+
+.link-description {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+nav {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav li {
+    flex: 1;
+    width: 500px;
+    margin-top: 0.5rem;
+}
+nav li:first-child {
+    border-top: 2px dotted #e87868;
+    padding-top: 3rem;
+    border-bottom: 2px dotted #e87868;
+    padding-bottom: 3rem;
+    margin-bottom: 1.5rem;
+}
+nav .link-description{
+    text-align-last: left;
+    margin-bottom: 1rem;
+    color: #3b3c3c;
+    font-size: 0.9rem;
+}
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #e87868;
+    color: #e87868;
+    background: #f8f5f0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    border-color: #d3a299;
+    background-color: #d3a299;
+    color: #f8f5f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+  
+
+footer {
+    background-color: #e4c6a6;
+    padding: 1.5rem;
+    text-align: center;
+    color: #faf2e7;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+   
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav li {
+        width: 100%;
+    }
+    .hero-section {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    .header-logo {
+        font-size: 1.5rem;
+    }
+}
+@font-face {
+    font-family: 'NanumMyeongjoOldHangeul';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumMyeongjoYetHangul/NanumMyeongjo-YetHangul.ttf) format("truetype");
+}
+
+
+
