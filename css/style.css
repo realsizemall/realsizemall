@@ -183,14 +183,6 @@ main {
 
   
 
-footer {
-    background-color: #e4c6a6;
-    padding: 1.5rem;
-    text-align: center;
-    color: #faf2e7;
-    margin-top: auto;
-    font-size: 0.7rem;
-}
 
 @media (max-width: 768px) {
    
@@ -221,3 +213,123 @@ footer {
 
 
 
+
+.policy-heading {
+    font-size: 18px;
+    margin: 24px 0 8px;
+    font-weight: 600;
+  }
+  
+  .policy-text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 12px;
+  }
+  
+  .policy-list {
+    margin: 0 0 12px 18px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  
+  .policy-back-link {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  
+  .policy-back-link a {
+    color: #e87868;
+    text-decoration: none;
+  }
+  
+  .policy-back-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* footer */
+  
+
+  .footer {
+    padding: 12px 20px 16px;
+    background-color: #e4c6a6;
+    padding: 1.5rem;
+    text-align: center;
+    color: #faf2e7;
+    margin-top: auto;
+    font-size: 0.7rem;
+}
+
+  .footer-text {
+    font-size: 12px;
+  }
+  
+  .footer-link {
+    margin-left: 8px;
+    color: #e87868;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 32px 20px 16px;
+  text-align: center;
+}
+
+.site-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.site-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.main {
+  flex: 1;
+  padding: 16px 20px 40px;
+}
+
+.main--narrow {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-item {
+  margin-bottom: 12px;
+}
+
+.link-item a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.1s ease;
+}
+
+.link-item a:hover {
+  transform: translateY(-1px);
+  background-color: #f0f3ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
